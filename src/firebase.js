@@ -1,6 +1,6 @@
 import { initializeApp, } from "firebase/app";
 import { getAuth, getIdToken, onIdTokenChanged } from "firebase/auth";
-// import { handleRefetchOne } from "components/Login/refeth";
+
 import SecureLS from 'secure-ls';
 var ls = new SecureLS({ encodingType: 'rc4', });
 
@@ -24,7 +24,7 @@ export const auth = getAuth(app);
      ls.set('email', user.email);
     
       getIdToken(user, true).then(r => {return ls.set('token', r); });
-      // handleRefetchOne();
+      
      }
   
      return null; 

@@ -1,10 +1,10 @@
 import React from 'react';
-import './firebase';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import { Provider } from 'react-redux';
 import { store } from 'components/redux/store';
 import { BrowserRouter } from 'react-router-dom';
+import './firebase';
 import './index.css';
 
 
