@@ -1,0 +1,13 @@
+
+.title{
+position: fixed;
+top: 50%;
+left: 50%;
+font-size: 7vw;
+transform: translate(-50%, -50%);
+font-family: Ubuntu-Bold;
+color: #fff;
+background: repeating-linear-gradient(white, white 2px, transparent 2px, transparent 4px);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
