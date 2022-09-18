@@ -1,7 +1,9 @@
 import { initializeApp, } from "firebase/app";
 import { getAuth, getIdToken, onIdTokenChanged } from "firebase/auth";
 import SecureLS from 'secure-ls';
-require('dotenv').config();
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 
 var ls = new SecureLS({ encodingType: 'rc4', });
 
