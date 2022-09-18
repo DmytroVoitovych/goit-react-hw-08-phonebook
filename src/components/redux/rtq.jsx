@@ -13,7 +13,7 @@ export const bookApi = createApi({
             getContacts: builder.query({
                 query: (token) => `/test.json?auth=${token}`, 
                 providesTags: (result) => {
-              console.log(result);
+              
               let resu = Object.assign([], Object.values(result || []) );
              
               return   result  ? [
