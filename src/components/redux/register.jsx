@@ -1,8 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import * as dotenv from 'dotenv';
-dotenv.config();
-const API = process.env.REACT_APP_FIREBASE_API_KEY;
-const SiGN_URL = process.env.REACT_APP_SIGN_URL; 
+const API = 'AIzaSyCJO6J5S13Pdm3k-fiqWujVysknh69eHLg';
+const SiGN_URL = 'https://identitytoolkit.googleapis.com/v1/'; 
 
 export const regApi = createApi({
     reducerPath: 'register',

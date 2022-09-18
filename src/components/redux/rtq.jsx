@@ -1,7 +1,5 @@
 import { createApi, fetchBaseQuery, } from '@reduxjs/toolkit/query/react';
-import * as dotenv from 'dotenv';
-dotenv.config();
-const DATA_BASE = process.env.REACT_APP_FIREBASE_DATABASE_URL;
+const DATA_BASE = 'https://autorisation-cda1f-default-rtdb.europe-west1.firebasedatabase.app';
 
 
 export const bookApi = createApi({
