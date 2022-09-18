@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+require('dotenv').config();
 const API = process.env.REACT_APP_FIREBASE_API_KEY;
 const SiGN_URL = process.env.REACT_APP_SIGN_URL; 
 
