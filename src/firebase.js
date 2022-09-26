@@ -1,8 +1,5 @@
 import { initializeApp, } from "firebase/app";
-import { getAuth, getIdToken, onIdTokenChanged } from "firebase/auth";
-import SecureLS from 'secure-ls';
-
-var ls = new SecureLS({ encodingType: 'rc4', });
+import { getAuth, } from "firebase/auth";
 
  export const firebaseConfig = {
  apiKey: "AIzaSyCJO6J5S13Pdm3k-fiqWujVysknh69eHLg",
@@ -17,16 +14,4 @@ var ls = new SecureLS({ encodingType: 'rc4', });
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
-
-  onIdTokenChanged(auth,  (user) => {  // обновление токена
-
-    if (user) {
-     ls.set('email', user.email);
-    
-      getIdToken(user, true).then(r => {return ls.set('token', r); });
-      
-     }
-  
-     return null; 
-}); 
 

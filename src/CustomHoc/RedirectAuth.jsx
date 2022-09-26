@@ -9,6 +9,8 @@ export const RedirectAuth = ({ children, isSuccess, isE }) => {
     }
     
     else if (isSuccess || window.localStorage.getItem('token') || ls.get('token') || !isE ) { return children };
+    
+    
 
     return console.log('test');
 };

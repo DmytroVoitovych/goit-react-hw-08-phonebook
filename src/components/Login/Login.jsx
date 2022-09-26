@@ -46,7 +46,7 @@ const chekingAuth = async () => {// проверка уникальности и
     const res = await signInWithEmailAndPassword(auth, email, password);
     Loading.dots();
     ls.set('token', res.user.accessToken);
-    
+
     if (res.user) {
     handleRefetchOne(update);  
     reset(setName, setNumber);

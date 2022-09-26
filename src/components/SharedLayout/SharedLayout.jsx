@@ -3,7 +3,7 @@ import {LogOut} from "components/LogOut/LogOut";
 import { List } from "./Layout.styled";
 import css from './main.module.css'
 
-export const SharedLayout = ({isSuccess, update}) => {
+export const SharedLayout = ({isSuccess, update, token}) => {
     return (
       <>
     <header>
@@ -14,7 +14,7 @@ export const SharedLayout = ({isSuccess, update}) => {
           <li><NavLink to="/register">Register</NavLink></li>
           <li><NavLink to="/login">Login</NavLink></li>
             </List>
-            { isSuccess && <LogOut update={update} />}
+            {isSuccess && <LogOut update={update} token={token} />}
          </nav>
             </header>
             <main className={css.limiter +' '+ css['container-login100'] }>
